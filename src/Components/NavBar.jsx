@@ -3,6 +3,7 @@ import {Links} from '../data.js';
 import {RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
 import {useState} from 'react';
 import { useEffect } from 'react';
+import Button from './Button.jsx';
 
 
 
@@ -24,7 +25,7 @@ function NavBar() {
   }, )
   
   return (
-    <div>
+    <div className='flex items-center justify-between'>
       <ul className='flex gap-10'>
         {newLinks.map((link) => {
           return (
@@ -44,6 +45,10 @@ function NavBar() {
           )
         })}
       </ul>
+      <div>
+        <Button value='Login'/>
+        <Button value='Sign Up' color={true}/>
+      </div>
     </div>
   )
 }

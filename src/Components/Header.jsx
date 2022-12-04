@@ -10,16 +10,14 @@ function Header() {
         <img src={BackgroundPattern} alt="" className='absolute -top-[28rem] z-0' />
         <div className='w-11/12 m-auto z-10 text-black p-14 relative'>
           <div className='flex gap-8'>
-            <div>
+            <div className='flex items-center'>
               <img className='w-20' src={Logo} alt="logo"/>
             </div>
-            <div>
+            <div className='flex-1'>
               <NavBar/> 
             </div>
           </div>
-          <div>
-            
-          </div>
+          
         </div>  
       </header>
     </>
