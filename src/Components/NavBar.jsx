@@ -33,14 +33,17 @@ function NavBar({navIsShowing}) {
   
   return (
     <div className='flex items-center justify-between'>
-      <nav className={`justify-between    ${navIsShowing? 'fixed top-28 right-0 w-1/2 animate-roll_in_blurred_right  bg-white flex-col gap-8 p-8 rounded-xl justify-center items-center md:flex vsm:flex sm:flex': 'md:hidden max:animate-roll_out_blurred_right flex-1 flex lg:flex xl:flex 2xl:flex vsm:hidden sm:hidden mmd:flex'}`} >
-        <ul className={`flex gap-10 text-white ${navIsShowing? 'flex-col justify-center text-[#333333]':''}`}>
+      <nav className={`lg:flex lg:justify-between animate-slide_in_out flex-1 ${navIsShowing? 'fixed block top-28 bg-white p-8 rounded-2xl':'hidden'}`}>
+        <ul className='lg:flex lg:text-white lg:gap-10 '>
           {newLinks.map((link) => {
             return (
-              <li key={link.id} className="flex justify-center items-center cursor-pointer relative transition-all duration-1000" onMouseOver={() => {handleShowNavLink(link.id, true)}} onMouseLeave={()=> {handleShowNavLink(link.id, false)}} onClick={() => {handleClick(link.id)}}>
-                <span className='font-bold'>{link.name}</span>
-                <span>{link.show? <RiArrowDropUpLine className='text-white text-3xl transition-all duration-1000'/> : <RiArrowDropDownLine className='text-3xl transition-all duration-1000' />}</span>
-                <ul onMouseEnter={() => {handleShowNavLink(link.id, true)}} className={`${link.show? 'block': 'hidden'}  ${navIsShowing? 'static shadow-none':''}animate-slide_in_out  transition-all cursor-pointer absolute top-8 -left-8 bg-white rounded-2xl shadow-2xl w-40  p-4 `} >
+              <li key={link.id} className={`lg:flex justify-center items-center cursor-pointer relative transition-all duration-1000 mb-4 lg:mb-0`} onMouseOver={() => {handleShowNavLink(link.id, true)}} onMouseLeave={()=> {handleShowNavLink(link.id, false)}} onClick={() => {handleClick(link.id)}}>
+                <div className='flex items-center justify-center'>
+                  <span className='font-bold'>{link.name}</span>
+                  <span >{link.show? <RiArrowDropUpLine className='text-3xl transition-all duration-1000'/> : <RiArrowDropDownLine className='text-3xl transition-all duration-1000'/>}</span>
+
+                </div>
+                <ul onMouseEnter={() => {handleShowNavLink(link.id, true)}} className={`${link.show? 'block': 'hidden'} md:static md:shadow-none vsm:static vsm:shadow-none sm:static sm:shadow-none lg:animate-slide_in_out lg:absolute rounded-xl cursor-pointer absolute bg-slate-100 top-8 -left-8 lg:bg-white lg:rounded-2xl lg:shadow-2xl  lg:w-40 lg:p-4`} >
                   {
                     link.categories.map((categories) => {
                       return (
@@ -57,9 +60,7 @@ function NavBar({navIsShowing}) {
           <Button value='Login'/>
           <Button value='Sign Up' color={true}/>
         </div>
-
       </nav>
-    
     </div>
   )
 }

@@ -26,7 +26,10 @@ function Header() {
               {navIsShowing?  <MdOutlineClose className='text-white text-4xl'/> : <HiOutlineMenuAlt1 className='text-white text-4xl'/>}
             </div>
           </div>
-          
+          <div className='flex flex-col items-center justify-center'>
+            <h1 className='font-ubuntu'>A modern publishing platform</h1>
+            <p>Grow your audience and build your online brand</p>
+          </div>
         </div>  
       </header>
     </>

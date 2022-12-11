@@ -14,6 +14,10 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
+    fontFamily: {
+      'overpass':['Overpass'],
+      'ubuntu': ['Ubuntu']
+    },
     extend: {
       keyframes: {
         slide_in_out: {
