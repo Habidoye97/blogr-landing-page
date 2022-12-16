@@ -31,8 +31,8 @@ Background gradient - Intro/CTA mobile nav:
 
 Background gradient - body:
 
-- Very dark gray blue: hsl(237, 17%, 21%)
-- Very dark desaturated blue: hsl(237, 23%, 32%)
+- Very dark gray blue: hsl(237, 17%, 21%), #333438
+- Very dark desaturated blue: hsl(237, 23%, 32%) #3F4164
 
 ## Typography
 
