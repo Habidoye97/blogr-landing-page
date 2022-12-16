@@ -14,7 +14,7 @@ function Header() {
     <>
       <header className='bg-[#FF876F] relative overflow-hidden rounded-bl-[6rem]'>
         <img src={BackgroundPattern} alt="" className='absolute -top-[28rem] z-0' />
-        <div className='container mx-auto z-10 text-black pr-24 pl-24 pt-14 pb-24 relative'>
+        <div className='container mx-auto z-10 text-black px-24 pt-14 pb-24 relative'>
           <div className='flex gap-8 justify-between'>
             <div className='flex items-center'>
               <img className='w-20' src={Logo} alt="logo"/>
@@ -22,7 +22,7 @@ function Header() {
             <div className='flex-1'>
               <NavBar navIsShowing={navIsShowing}/> 
             </div>
-            <div className='cursor-pointer mmd:hidden lg:hidden md:block sm:block' onClick={() => setNavIsShowing(!navIsShowing)}>
+            <div className='cursor-pointer mmd:block lg:hidden md:block sm:block' onClick={() => setNavIsShowing(!navIsShowing)}>
               {navIsShowing?  <MdOutlineClose className='text-white text-4xl'/> : <HiOutlineMenuAlt1 className='text-white text-4xl'/>}
             </div>
           </div>

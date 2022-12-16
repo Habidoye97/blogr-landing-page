@@ -9,20 +9,20 @@ function Main() {
           <div className='bg-transparent  box-border'>
             <h1 className='text-center text-3xl bg-transparent'>Designed for the future</h1>
           </div>
-          <div className='flex border-box'>
+          <div className='flex flex-col-reverse mmd:flex-row border-box'>
             <div className='flex-1 border-box'>
-              <div className='pl-24 pr-24 py-20'>
+              <div className='px-24 py-20'>
                 <h2 className='text-xl pb-4 font-medium'>Introducing an extensible editor</h2>
                 <p>Blogr features are extremely intuitive interface which let you to focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy way to add functionality or change the look of a blog </p>
               </div>
-              <div className='pl-24 pr-24'>
+              <div className='px-24'>
                 <h2 className='text-xl pb-4 font-medium'>Robust content management</h2>
                 <p >Flexible content management enables users to easily move through posts, increase the usability of your blog by adding customized categories, sections, format, or flow. with this functionality, you're in full control. </p>
               </div>
             </div>
             <div className='flex-1 border-box'>
               <div className=''>
-                <img className='absolute top-20 h-[90%] -right-52 z-20' src={illustration} alt="" />
+                <img className='mmd:absolute mmd:top-20 mmd:h-[75%] lg:h-[90%] mmd:-right-52 z-20' src={illustration} alt="" />
               </div>
               
             </div>
