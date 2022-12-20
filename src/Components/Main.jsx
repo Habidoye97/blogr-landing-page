@@ -2,6 +2,7 @@ import React from 'react';
 import illustration from '../images/illustration-editor-desktop.svg';
 import phone from '../images/illustration-phones.svg'
 import patternCircle from '../images/bg-pattern-circles.svg'
+import illustrationLaptop from '../images/illustration-laptop-desktop.svg'
 
 function Main() {
   return (
@@ -31,7 +32,7 @@ function Main() {
           </div>
         </div>
       </section>
-      <section className='bg-[#3A3B59] mt-52 mmd:mt-4 relative rounded-tr-[8rem] rounded-bl-[8rem]'>
+      <section className='bg-[#3A3B59] my-52 mmd:mt-4 relative rounded-tr-[8rem] rounded-bl-[8rem]'>
         <img className='absolute z-10 -top-[10rem] mmd:-top-[4.7rem] mmd:left-12' src={phone} alt="phone" />
         <div className='mmd:flex mmd:gap-12 relative overflow-hidden'>
           <div className='flex-1'>
@@ -47,7 +48,24 @@ function Main() {
       </section>
       <section >
         <div className='container mx-auto'>
-
+          <div className='flex flex-col mmd:flex-row border-box'>
+              <div className='flex-1 border-box'>
+                <div className=''>
+                  <img className='mmd:absolute mmd:top-20 mmd:h-[75%] lg:h-[90%] mmd:-right-52 z-20' src={illustrationLaptop} alt="" />
+                </div>
+              </div>
+              <div className='flex-1 text-center mmd:text-left border-box'>
+                <div className='px-16  mmd:px-24 py-20'>
+                  <h2 className='text-xl pb-4 font-medium'>Free, Open, Simple </h2>
+                  <p>Blogr features are extremely intuitive interface which let you to focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy way to add functionality or change the look of a blog </p>
+                </div>
+                <div className='px-16 mmd:px-24'>
+                  <h2 className='text-xl pb-4 font-medium'>Powerful Tooling</h2>
+                  <p >Flexible content management enables users to easily move through posts, increase the usability of your blog by adding customized categories, sections, format, or flow. with this functionality, you're in full control. </p>
+                </div>
+              </div>
+             
+            </div>
         </div>
       </section>
     </>
