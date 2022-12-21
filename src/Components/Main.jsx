@@ -7,7 +7,7 @@ import illustrationLaptop from '../images/illustration-laptop-desktop.svg'
 function Main() {
   return (
     <>
-      <section className='relative overflow-hidden box-border mb-20'>
+      <section className='relative overflow-hidden box-border my-20'>
         <div className='container mx-auto box-border mmd:py-32 text-[#3F4164]'>
           <div className='bg-transparent  box-border'>
             <h1 className='text-center text-3xl bg-transparent'>Designed for the future</h1>

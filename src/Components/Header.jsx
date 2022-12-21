@@ -14,7 +14,7 @@ function Header() {
     <>
       <header className='bg-[#FF876F] relative overflow-hidden rounded-bl-[6rem]'>
         <img src={BackgroundPattern} alt="" className='absolute -top-[28rem] z-0' />
-        <div className='container mx-auto z-10 text-black px-24 pt-14 pb-24 relative'>
+        <div className='container mx-auto z-10 text-black sm:px-12 px-8 mmd:px-16 pt-14 pb-24 relative'>
           <div className='flex gap-8 justify-between'>
             <div className='flex items-center'>
               <img className='w-20' src={Logo} alt="logo"/>

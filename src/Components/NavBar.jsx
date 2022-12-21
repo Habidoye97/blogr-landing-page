@@ -33,7 +33,7 @@ function NavBar({navIsShowing}) {
   
   return (
     <div className='flex items-center justify-between'>
-      <nav className={`lg:flex lg:justify-between animate-slide_in_out flex-1 ${navIsShowing? 'fixed block top-28 bg-white p-8 rounded-2xl':'hidden'}`}>
+      <nav className={`lg:flex lg:justify-between animate-slide_in_out flex-1 ${navIsShowing? 'fixed block top-28 bg-white rounded-2xl':'hidden'}`}>
         <ul className='lg:flex lg:text-white lg:gap-10 '>
           {newLinks.map((link) => {
             return (
