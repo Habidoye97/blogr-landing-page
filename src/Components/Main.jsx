@@ -46,12 +46,12 @@ function Main() {
           </div>
         </div>
       </section>
-      <section >
-        <div className='container mx-auto'>
+      <section className='relative my-52 box-border'>
+        <div className='container  mx-auto'>
           <div className='flex flex-col mmd:flex-row border-box'>
               <div className='flex-1 border-box'>
                 <div className=''>
-                  <img className='mmd:absolute mmd:top-20 mmd:h-[75%] lg:h-[90%] mmd:-right-52 z-20' src={illustrationLaptop} alt="" />
+                  <img className='mmd:absolute mmd:-top-20 mmd:-left-[17rem] z-20' src={illustrationLaptop} alt="" />
                 </div>
               </div>
               <div className='flex-1 text-center mmd:text-left border-box'>
@@ -64,7 +64,6 @@ function Main() {
                   <p >Flexible content management enables users to easily move through posts, increase the usability of your blog by adding customized categories, sections, format, or flow. with this functionality, you're in full control. </p>
                 </div>
               </div>
-             
             </div>
         </div>
       </section>
