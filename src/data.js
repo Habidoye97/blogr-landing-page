@@ -5,11 +5,23 @@ export const Links = [
     categories: [
       {
         id: 11,
-        name: 'Services',
+        name: 'Overview',
       },
       {
         id: 12,
-        name: 'Goods'
+        name: 'Pricing'
+      },
+      {
+        id: 13,
+        name: 'Marketplace'
+      },
+      {
+        id: 14,
+        name: 'Features'
+      },
+      {
+        id: 15,
+        name: 'Integration'
       }
     ],
     show: false
@@ -20,11 +32,19 @@ export const Links = [
     categories: [
       {
         id: 21,
-        name: 'About Us',
+        name: 'About',
       },
       {
         id: 22,
-        name: 'Contact Us'
+        name: 'Team'
+      },
+      {
+        id: 23,
+        name: 'Blog'
+      },
+      {
+        id: 24,
+        name: 'Careers'
       }
     ],
     show: false
