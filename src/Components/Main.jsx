@@ -24,7 +24,7 @@ function Main() {
               </div>
             </div>
             <div className='flex-1 border-box'>
-              <div className=''>
+              <div className='mt-8'>
                 <img className='mmd:absolute mmd:top-20 mmd:h-[75%] lg:h-[90%] mmd:-right-52 z-20' src={illustration} alt="" />
               </div>
               
@@ -38,7 +38,7 @@ function Main() {
           <div className='flex-1'>
             <img className='relative mmd:absolute -top-[10rem] -left-[5rem] mmd:-top-[35rem] mmd:-left-[13rem]' src={patternCircle} alt="patternCircle" />
           </div>
-          <div className='flex-1 relative px-16 text-center  mmd:px-28 py-32 text-white'>
+          <div className='flex-1 relative text-center  mmd:px-28 py-32 text-white'>
             <div className='absolute mmd:relative -top-[10rem] mmd:top-0 px-20'>
               <h1 className='text-2xl font-medium pb-8'>State of Art Infrastructure</h1>
               <p >With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive</p>
