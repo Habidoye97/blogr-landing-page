@@ -3,9 +3,6 @@ import {Links} from '../data.js';
 import {RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
 import {useState} from 'react';
 
-import Button from './Button.jsx';
-
-
 
 function NavBar({navIsShowing}) {
 
@@ -33,7 +30,7 @@ function NavBar({navIsShowing}) {
   
   return (
     <div className='flex items-center justify-between'>
-      <nav className={`lg:flex lg:justify-between animate-slide_in_out flex-1 ${navIsShowing? 'fixed block top-28 bg-white rounded-2xl':'hidden'}`}>
+      <nav className={`lg:flex lg:justify-between animate-slide_in_out flex-1 ${navIsShowing? 'fixed block top-28 bg-white rounded-2xl p-8':'hidden'}`}>
         <ul className='lg:flex lg:text-white lg:gap-10 '>
           {newLinks.map((link) => {
             return (
@@ -57,8 +54,8 @@ function NavBar({navIsShowing}) {
           })}
         </ul>
         <div>
-          <Button value='Login'/>
-          <Button value='Sign Up' color={true}/>
+          <button className='font-bold rounded-3xl border-2 p-1 w-28 border-transparent text-[#FF6563] mmd:text-white bg-[#FF6563] mmd:bg-transparent'>Login</button>
+          <button className='font-bold rounded-3xl border-2 p-1 w-28 border-transparent text-white bg-[#FF6563] mmd:text-white'>Sign Up</button>
         </div>
       </nav>
     </div>
