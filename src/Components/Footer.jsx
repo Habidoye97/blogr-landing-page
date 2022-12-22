@@ -6,8 +6,8 @@ function Footer() {
   return (
     <>
       <footer className='bg-[#333438]'>
-        <div className='container flex flex-wrap mx-auto py-20 '>
-          <div className='flex gap-32'>
+        <div className='container  mx-auto py-20 '>
+          <div className='flex flex-wrap gap-32'>
             <div>
               <img className='w-20' src={Logo} alt="logo"/>
             </div>
