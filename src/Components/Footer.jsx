@@ -7,12 +7,12 @@ function Footer() {
     <>
       <footer className='bg-[#333438]'>
         <div className='container  mx-auto px-20 py-20 '>
-          <div className='flex flex-wrap gap-32'>
+          <div className='flex justify-center mmd:justify-start flex-wrap gap-32'>
             <div>
               <img className='w-20' src={Logo} alt="logo"/>
             </div>
             <div>
-              <div className='flex flex-wrap gap-32 text-white text-xl text-semibold'>
+              <div className='flex flex-wrap gap-24 mmd:gap-32 text-white text-sm text-semibold'>
                 {
                   Links.map((link) => {
                     return (
