@@ -53,8 +53,8 @@ function NavBar({navIsShowing}) {
             )
           })}
         </ul>
-        <div>
-          <button className='font-bold rounded-3xl border-2 p-1 w-28 border-transparent text-[#FF6563] mmd:text-white bg-[#FF6563] mmd:bg-transparent'>Login</button>
+        <div className='flex gap-4'>
+          <button className='font-bold rounded-3xl border-2 p-1 w-28 border-transparent text-white mmd:text-white bg-[#FF6563] mmd:bg-transparent'>Login</button>
           <button className='font-bold rounded-3xl border-2 p-1 w-28 border-transparent text-white bg-[#FF6563] mmd:text-white'>Sign Up</button>
         </div>
       </nav>
